@@ -1,7 +1,18 @@
 /* styles.css */
-h1 {
+header {
 font-family: Arial, Helvetica, sans-serif;
 font-size: 30px; 
+font-weight: bold;
 color: #CF4E02;
-font-weight: lighter;
+}
+h1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    color: #CF4E02;
+    
+}
+
+a {
+    color: #CF4E02;
 }
