@@ -33,10 +33,20 @@ font-size: 22px;
 font-weight: normal;
 color: #CF4E02;
 }
+nav a {
+    text-decoration:none;
+    padding: 10px;
+}
+
+nav li {
+    display: inline-block;
+}
 nav a:hover {
-    text-decoration:unset;
-}
-button:hover {
-    color: white;
     border-color: #CF4E02;
+    text-decoration: underline;
 }
+
+nav ul{
+    padding: 10px;
+}
+
