@@ -54,6 +54,11 @@ nav ul {
   max-width: 250px;
 }
 
+div i {
+padding: 5px;
+
+}
+
 /* homepage */
 body {
     /* fix mozilla */
