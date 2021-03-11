@@ -1,67 +1,85 @@
 /* styles.css */
 header {
-font-family: Arial, Helvetica, sans-serif;
-font-size: 30px; 
-font-weight:lighter;
-color: #CF4E02;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+  color: #cf4e02;
 }
 
 h1 {
-    font-family: Helvetica, sans-serif;
-    font-size: 40px;
-    font-weight: lighter;
-    color: #CF4E02;
-    
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #cf4e02;
 }
-h2{
-    font-family: Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: bolder;
-    color: #CF4E02;
+h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  color: #cf4e02;
 }
 a {
-    color: #CF4E02;
+  color: #cf4e02;
 }
 .About {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: normal;
-    color: #696969;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  color: #696969;
 }
 nav li {
-font-family: Arial, Helvetica, sans-serif;
-font-size: 22px;
-font-weight: normal;
-color: #CF4E02;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: normal;
+  color: #cf4e02;
 }
 nav a {
-    text-decoration:none;
-    padding: 10px;
+  text-decoration: none;
+  padding: 10px;
 }
 
 nav li {
-    display: inline-block;
+  display: inline-block;
 }
 nav a:hover {
-    border-color: #CF4E02;
-    text-decoration: underline;
+  border-color: #cf4e02;
+  text-decoration: underline;
 }
 
-nav ul{
-    padding: 10px;
+nav ul {
+  padding: 10px;
 }
 
 .logo {
-    max-width: 100px;
+  max-width: 250px;
 }
 
 /* homepage */
-.Welcome {
-    background-image: url("../Img/Home_Page.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: bottom;
-    min-height: 100%;
+body {
+    /* fix mozilla */
+  background-image: url("../Img/Home_Page.jpg"), 
+  -moz-linear-gradient(top, #ADB2B6 0%, #ABAEB3 100%);
+   /* default */
+  background-image: linear-gradient(180deg, #ffffff9a, #5159cc48), url("../Img/Home_Page.jpg");
+  /* other settings*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -o-background-size: cover; /* standard */
+  -moz-background-size: cover; /* mozilla */
+  -webkit-background-size: cover; /* chrome */
 }
- 
+
+/* Contact */
+
+input[type="text"] {
+  padding: 8px;
+  width: 40%;
+  color: #696969;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.form {
+  display: block;
+  position: fixed;
+}
