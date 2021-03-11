@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="myscript.js"></script>
 </head>
 <body>
@@ -19,5 +19,22 @@
             <li><a href="about.html">About</a></li>
         </ul>
     </nav>
+
+    <form action="submit.php" method="POST">
+        <h2>Shipping adress</h2>
+        <input type="text" name="firstname" />
+        <input type="text" name="lastname"/> <br/>
+        <input type="text" name="adress"/>
+        <input type="number" name="postcode"/> <br/>
+       <label for="Country">Select Country:</label>
+        <select name="Countries" id="Countries">
+            <option value="Norway">Norway</option>
+            <option value="England">England</option>
+            <option value="Danmark">Denmark</option>
+            <option value="other">other</option>
+        </select> <br/>
+        <input type="text" name="e-mail"/> <br/>
+        <input type="submit" value="Send"/>
+    </form>
 </body>
 </html>

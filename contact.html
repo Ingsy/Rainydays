@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <script src="myscript.js"></script>
 </head>
 <body>
@@ -20,12 +20,13 @@
         </ul>
     </nav>
     
-    <form>
+    <form action="submit.php" method="POST">
         <h2>Send us a message</h2>
-        <input /> <br/>
-        <input /> <br/>
-        <input /> <br/>
-        <input type="button" value="Send"/>
+        <input type="text" name="firstname" /> <br/>
+        <input type="text" name="lastname"/> <br/>
+        <input type="text" name="e-mail"/> <br/>
+        <textarea id="message" name="message" rows="5" cols="30"></textarea><br/>
+        <input type="submit" value="Send" <a href="message.html">Send</a>/>
     </form>
 </body>
 </html>
