@@ -111,7 +111,7 @@ body {
 }
 
 .right-menu {
-  position: fixed;
+  position:absolute;
   right: 20px;
   top: 0;
   bottom: 0;
@@ -164,4 +164,18 @@ input[type="text"] {
 
 aside {
   color: #cf4e02;
+}
+
+
+/* Shop */ 
+
+.grid {
+    background: rgb(255, 255, 255) ;
+    min-height: 50vh;
+    display: grid;
+    position: absolute;
+    grid-gap: 5em;
+    grid-template-rows: auto 1fr auto auto;
+    grid-template-columns: auto auto;
+    
 }
