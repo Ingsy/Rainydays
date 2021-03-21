@@ -1,0 +1,22 @@
+
+/* mobile styles */
+@media only screen and (max-width: 480px) {
+  body {
+    width: 320px;
+    font-size: 10px;
+  }
+}
+/* tablet styles */
+@media only screen and (min-width: 481px) and (max-with: 768px) {
+  body {
+    width: 80%;
+    font-size: 20px;
+  }
+}
+/* desctop styles */
+@media only screen and (min-width: 769px) {
+  body {
+    font-size: 30px;
+    width: 700px;
+  }
+}

@@ -1,0 +1,20 @@
+/* About page styles */
+.work {
+    background-color: #fff;
+    width: 300px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    color: #696969;
+  }
+
+
+  h1 {
+    font-family: Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #cf4e02;
+    padding: 15px;
+    margin: 10px;
+  }
