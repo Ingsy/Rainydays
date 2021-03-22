@@ -52,20 +52,20 @@ header .nav-menu {
 }
 
 header .nav-menu button {
-  align-items: flex-start;
   text-align: center;
   cursor: pointer;
   box-sizing: border-box;
   width: 200px;
-  border: 1px solid #000000;
+  border: 1px solid
+  #000000;
   padding: 20px;
-  margin-bottom: 40px;
-  background-color: #fff;
+  margin-bottom: 25px;
+  background-color:
+  #fff;
   padding: 10px;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: normal;
   display: inline-block;
-  border-color: #cf4e02;
 }
 
 footer .right-menu-container {

@@ -6,19 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
 .grid-cell-1{
-  grid-area: header2;
+  grid-area: header1;
   background-color:green;
   display: flex; /*Aktiver flexbox*/
   align-items:center; /*flexbox vertikal senter*/
   justify-content: center; /*flexbox horisontal center*/
 }
-.item-b {
+.nav-grid {
   grid-area: main;
   background-color:red;
+  color:honeydew;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
 }
 .item-c {
   grid-area: sidebar;
   background-color: blue;
+  color:honeydew;
+  display: grid;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
 }
 .item-d {
   grid-area: footer;
@@ -26,15 +36,26 @@
   justify-items: center;
 }
 
+.text-container {
+  grid-area: text;
+  background-color: hotpink;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  display: grid;
+  text-align: center;
+  justify-items: center;
+  
+}
+
 .grid-container {
   display: grid;
-  grid-template-columns: 10% 70% 10% 10%;
-  grid-template-rows: 300px 200px 33%;
+  grid-template-columns: 25% 50% 10% 20%;
+  grid-template-rows: 200px 300px 70px;
   column-gap: 30px;
   row-gap: 30px;
   grid-template-areas: 
-    "header1 header2 header header"
-    "main main . sidebar"
+    "header1 header header header"
+    "main text . sidebar"
     "footer footer footer footer";
 }
     </style>
@@ -43,14 +64,36 @@
 <body>
     <div class="grid-container">
       <div class="grid-cell-1">
-        <img src="Img/RainyDays_Logo.png" width="350px">
-        <img src="Img/RainyDays_Logo.png" width="350px">
-        <div>hhhshdsh</div>
+        <img src="Img/RainyDays_Logo.png" width="300px">
       </div>
        
-        <div class="item-b">test 2</div>
-       <div class="item-c">test 3</div>
+        
+        <nav class="nav-grid">
+            <button><a href="index.html">Home</a></button>
+            <button><a href="shop.html">Shop</a></button>
+            <button><a href="checkout.html">Checkout</a></button>
+            <button><a href="contact.html">Contact</a></button>
+            <button><a href="about.html">About</a></button>
+        </nav>
+       <div class="item-c">right side bar</div>
        <div class="item-d">test 4</div>
+
+       <p class="text-container"> masse masse text</p>
+
+       <form class="text-container" action="submit.php" method="POST">
+        <h3>Send us a message</h3>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="firstname">First name</label>
+        <input type="text" name="firstname" id="firstname" class="form__input"/> <br/>
+        <label for="lastname">Last name</label>
+        <input type="text" name="lastname" id="lastname" class="form__input"/> <br/>
+        <label for="e-mail">E-mail</e-mail></label>
+        <input type="text" name="e-mail" id="e-mail" class="form__input"/> <br/>
+    </fieldset>
+        <textarea id="message" name="message" rows="5" cols="30"></textarea><br/>
+        <input type="submit" value="Send" <a href="message.html"><a/>
+    </form>
      </div>
 </body>
 </html>
