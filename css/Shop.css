@@ -11,23 +11,24 @@
     grid-template-columns: auto auto;
   }
 
-.Grid {
-    background: lightblue ;
-    min-height: 100vh;
-    display: grid;
-    grid-gap: 1em;
-    grid-template-rows: auto 1fr auto auto;
-    grid-template-areas: 
-    'main main'
-    'main footer'
-    ;
-}
-main, footer {
-    background: white;
-  }
+  .element-a
   
-  header{grid-area: header;}
-  main{grid-area: main;}
-  footer{grid-area: footer;}
 
-  
+/* grid-testing */ 
+
+.container {
+    display: grid | inline-grid;
+    background: 
+  }
+
+.grid-container {
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+  }
+
+  .grid-logo {
+      grid-column-start: 1;
+      grid-column-end: three;
+      grid-row-start: row1-start;
+      grid-row-end: 2;
+  }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+.grid-cell-1{
+  grid-area: header2;
+  background-color:green;
+  display: flex; /*Aktiver flexbox*/
+  align-items:center; /*flexbox vertikal senter*/
+  justify-content: center; /*flexbox horisontal center*/
+}
+.item-b {
+  grid-area: main;
+  background-color:red;
+}
+.item-c {
+  grid-area: sidebar;
+  background-color: blue;
+}
+.item-d {
+  grid-area: footer;
+  background-color: black;
+  justify-items: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 10% 70% 10% 10%;
+  grid-template-rows: 300px 200px 33%;
+  column-gap: 30px;
+  row-gap: 30px;
+  grid-template-areas: 
+    "header1 header2 header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid-container">
+      <div class="grid-cell-1">
+        <img src="Img/RainyDays_Logo.png" width="350px">
+        <img src="Img/RainyDays_Logo.png" width="350px">
+        <div>hhhshdsh</div>
+      </div>
+       
+        <div class="item-b">test 2</div>
+       <div class="item-c">test 3</div>
+       <div class="item-d">test 4</div>
+     </div>
+</body>
+</html>
