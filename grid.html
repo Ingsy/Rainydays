@@ -14,25 +14,21 @@
 }
 .nav-grid {
   grid-area: main;
-  background-color:red;
-  color:honeydew;
-  display: grid;
+  display: flex;
+  max-height: 620px;
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border: 1px solid #000000;
-  padding: 10px;
-  font-size: 20px;
+  justify-items: center;
 
 }
 .item-c {
   grid-area: sidebar;
-  background-color: blue;
   color:honeydew;
   display: grid;
   text-align: center;
   align-items: center;
   justify-items: center;
+  max-width: 201px;
 }
 .item-d {
   grid-area: footer;
@@ -80,8 +76,8 @@
   column-gap: 20px;
   row-gap: 10px;
   grid-template-areas: 
-    "header1 top-center top-center sidebar"
-    "slogan slogan slogan sidebar"
+    "main top-center top-center sidebar"
+    "main slogan slogan sidebar"
     "main text text sidebar"
     "footer footer footer footer";
 }
@@ -90,26 +86,21 @@
 </head>
 <body>
     <div class="grid-container">
-      <div class="grid-cell-1">
-        <img src="Img/RainyDays_Logo.png" width="300px">
-      </div>
        
       <p class="slogan"> pushing the comfort zone</p>
 
-        
-        <nav class="nav-grid">
-            <button><a href="index.html">Home</a></button>
-            <button><a href="shop.html">Shop</a></button>
-            <button><a href="checkout.html">Checkout</a></button>
-            <button><a href="contact.html">Contact</a></button>
-            <button><a href="about.html">About</a></button>
-        </nav>
+      <img class="nav-grid" src="img/nav-menu.jpg" alt="mountain">
+      
 
       <div class="top-center">
         Welcome
       </div>
 
        <div class="item-c">right side bar</div>
+
+      
+      <img class="item-c" src="img/rainydais_høyre.jpg" alt="girl laughing with rain pouring ower her">
+      
        <div class="item-d">test 4</div>
 
        <p class="text-container"> masse masse text</p>

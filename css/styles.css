@@ -60,8 +60,18 @@ header .nav-menu button { /* preferably use ancor-tags instead of button if its 
   padding: 10px; /* shortcut for padding 1. px is top and bottom 2. one is left and right*/
   font-size: 20px;
   display: inline-block;
+  position: relative;
+  transition-property: background-color;
+  transition-duration: 1s;
 }
 
+.nav-menu button:hover {
+  background-color:#cf4e02;
+}
+
+.nav-menu button:hover a{
+  color:#fff !important;
+}
 
 footer .right-menu-container {
   position: fixed;
