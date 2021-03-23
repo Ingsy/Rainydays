@@ -26,7 +26,7 @@ body {
 
 a {
   color: #cf4e02;
-  text-decoration: none;
+  text-decoration: none; /* takes away the line under a link/button*/
 }
 
 header p {
@@ -48,25 +48,21 @@ header .nav-menu {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px
 }
 
-header .nav-menu button {
+header .nav-menu button { /* preferably use ancor-tags instead of button if its for linking to another page*/
   text-align: center;
   cursor: pointer;
   box-sizing: border-box;
-  width: 200px;
-  border: 1px solid
-  #000000;
-  padding: 20px;
+  width: 170px;
+  border: 1px solid #000000;
   margin-bottom: 25px;
-  background-color:
-  #fff;
-  padding: 10px;
+  background-color: #fff;
+  padding: 10px; /* shortcut for padding 1. px is top and bottom 2. one is left and right*/
   font-size: 20px;
-  font-weight: normal;
   display: inline-block;
 }
+
 
 footer .right-menu-container {
   position: fixed;
