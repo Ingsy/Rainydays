@@ -2,9 +2,8 @@
 /*  Styles for desktop */
 header {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 40px;
   font-weight: bolder;
-  color: #cf4e02;
+  color: #cf4e02; /* first color of choice. Changed on the buttons/ancor-tags for accessability reasons*/
   margin: 20px;
 }
 
@@ -25,7 +24,7 @@ body {
 }
 
 a {
-  color: #cf4e02;
+  color: #9b3a00; /*Changed color for accessability reasons (WCAG)*/
   text-decoration: none; /* takes away the line under a link/button*/
 }
 
