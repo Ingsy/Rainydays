@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheets" href="css/ball.css">
+    <link rel="stylesheets" href="css/variables.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
 
@@ -22,9 +23,19 @@
 .ball:hover{
     background-color: blue;
 }
+:root {
+    --color:red;
+}
+
+p {
+    color: var(--color);
+}
         </style>
 </head>
     <body>
+        <p>
+            Hello <strong>World</strong>
+        </p>
         <div class="ball"></div>
     </body>
 </html>

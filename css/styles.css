@@ -63,10 +63,15 @@ header .nav-menu button { /* preferably use ancor-tags instead of button if its 
   position: relative;
   transition-property: background-color;
   transition-duration: 1s;
+  transition: width 2s;
 }
 
 .nav-menu button:hover {
   background-color:#cf4e02;
+  transition-property: background-color;
+  transition-duration: 2s;
+  width: 200px;
+
 }
 
 .nav-menu button:hover a{
