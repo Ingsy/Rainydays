@@ -1,0 +1,118 @@
+.grid-container {
+max-width: 1080px;
+margin: 0 auto;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: 27% 60% 20%;
+  grid-template-rows: 200px 70px 650px;
+  grid-template-areas:
+    "header header aside"
+    "text text aside"
+    "nav main aside";
+}
+/* colum-horisontal (bortover) */
+/* row -vertical (nedover)*/
+
+/*grid-template-rows: auto auto auto 1fr; Auto= vil kun ta opp den plassen elementet trenger 1fr=resen av plassen*/
+
+.header {
+  grid-area: header;
+  display: flex;
+  border: 1px solid #000000;
+}
+
+.text {
+  grid-area: text;
+  display: flex;
+  border: 1px solid #000000;
+  font-size: 25px;
+}
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  border: 1px solid #000000;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+  z-index: 2;
+  flex-direction: column;
+}
+.nav-background {
+  grid-area: nav;
+  overflow: hidden;
+  width: auto;
+  z-index:1;
+}
+.nav-background img {
+    width: 100%;
+}
+
+.nav-menu {
+  position: absolute;
+  left: 0;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.main {
+  grid-area: main;
+  display: flex;
+  background-color: white;
+  border: 1px solid #000000;
+}
+.aside-background {
+    grid-area: aside;
+    overflow: hidden;
+    width: auto;
+    z-index: 1;
+}
+.aside-background img {
+    width: 150%;
+}
+.aside {
+  grid-area: aside;
+  display: flex;
+  align-items: flex-start;
+  margin: 15px;
+  justify-content: space-evenly;
+  overflow: hidden;
+  flex-wrap: wrap;
+  z-index: 2;
+  flex-direction: row;
+  font-size: 2rem;
+}
+.aside-sosial{
+    grid-area: aside;
+    display: flex;
+    align-items: flex-end;
+    margin: 15px;
+    justify-content: space-evenly;
+    overflow: hidden;
+    flex-wrap: wrap;
+    z-index: 2;
+    flex-direction: row;
+    font-size: 2rem;
+}
+.aside a {
+    color: #cf4e02;
+}
+.aside-sosial a {
+    color: #000000;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: #cf4e02;
+}
+
+/* flexbox
+    justify-content — controls alignment of all items on the main axis.
+    align-items — controls alignment of all items on the cross axis.
+    align-self — controls alignment of an individual flex item on the cross axis.
+    align-content — described in the spec as for “packing flex lines”; controls space between flex lines on the cross axis.
+*/

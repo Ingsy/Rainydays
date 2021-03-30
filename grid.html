@@ -14,13 +14,20 @@
 }
 .nav-grid {
   grid-area: main;
-  display: flex;
-  max-height: 620px;
+  display: grid;
+  max-height: 700px;
   text-align: center;
   align-items: center;
   justify-items: center;
-
+  box-sizing: border-box;
+  padding: 10px; /* shortcut for padding 1. px is top and bottom 2. one is left and right*/
+  font-size: 20px;
 }
+
+.img-nav {
+  max-height: 1000px;
+}
+
 .item-c {
   grid-area: sidebar;
   color:honeydew;
@@ -72,7 +79,7 @@
 .grid-container {
   display: grid;
   grid-template-columns: 20% 10% 50% 20%;
-  grid-template-rows: 200px 50px 350px 30px;
+  grid-template-rows: 100px 50px 500px 30px;
   column-gap: 20px;
   row-gap: 10px;
   grid-template-areas: 
@@ -89,7 +96,16 @@
        
       <p class="slogan"> pushing the comfort zone</p>
 
-      <img class="nav-grid" src="img/nav-menu.jpg" alt="mountain">
+      <img class="nav-grid" src="img/nav-menu.jpg"  style="z-index: 1;" alt="mountain">
+
+      <nav class="nav-grid" style="z-index: 2;">
+          <button alt="go to home page"><a href="index.html">Home</a></button>
+          <button alt="go to shop page"><a href="shop.html">Shop</a></button>
+          <button alt="go to checkout page"><a href="checkout.html">Checkout</a></button>
+          <button alt="go to contact page"><a href="contact.html">Contact</a></button>
+          <button alt="go to about page"><a href="about.html">About</a></button>
+      </nav>
+      </nav>
       
 
       <div class="top-center">
