@@ -12,7 +12,7 @@
     <div class="grid-container">
 
         <div class="nav-logo">
-            <img src="Img/RainyDays_Logo.png" alt="logo of my website.com" width="350px"/>
+            <img src="Img/RainyDays_Logo.png" alt="logo of my website.com" />
 
             <h1>pushing your comfort zone</h1>
           </div>
@@ -31,29 +31,7 @@
 Her kommer tittel på siden + tilbakeknapp
       </p>
       <main class="main">
-        <form action="submit.php" method="POST">
-            <h3>Shipping adress</h3>
-            <label for="First name">First name</label>
-            <input type="text" name="firstname" id="First name"/>
-            <label for="Last name">Last name</label>
-            <input type="text" name="lastname"/> <br/>
-            <label for="adress">adress</label>
-            <input type="text" name="adress"/>
-            <label for="postcode">postcode</label>
-            <input type="number" name="postcode"/> <br/>
-           <label for="Country">Select Country:</label>
-            <select  id="Countries" name="Countries">
-                <option value="Norway">Norway</option>
-                <option value="England">England</option>
-                <option value="Danmark">Denmark</option>
-                <option value="other">other</option>
-            </select> <br/>
-            <label for="email">e-mail</label>
-            <input type="text" name="e-mail" id="E-mail">
-        <input type="checkbox" id="email-updates">
-        <label for="email-updates">Sing up for newsletter</label> <br/>
-            <input type="submit" value="Send"/>
-        </form>
+       
       </main>
       <div class="aside-background">
         <img src="img/rainydais_høyre.jpg" alt="girl laughing with rain pouring ower her" />
@@ -64,9 +42,11 @@ Her kommer tittel på siden + tilbakeknapp
             <a  href="search.html" alt="search"><i class="fas fa-search"></i></a>
         </div>
         <div class="aside-sosial">
-            <a  href="shoppingchart.html" alt="facebook"><i class="fab fa-facebook-f"></i></a>
-            <a  href="index.html" alt="twitter"><i class="fab fa-twitter"></i></a>
-            <a  href="search.html" alt="instagram"><i class="fab fa-instagram"></i></a>
+            <div class="container">
+              <a href="index.html" alt="twitter"><i class="fab fa-twitter"></i></a>
+              <a href="shoppingchart.html" alt="facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="search.html" alt="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
         </div>
       </div>
   </body>

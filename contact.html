@@ -27,23 +27,21 @@
     <button alt="go to contact page"><a href="contact.html">Contact</a></button>
     <button alt="go to about page"><a href="about.html">About</a></button>
   </nav>
-  <p class="title">
-Contact
+<p class="title"> Contact</p>
   </p>
   <main class="main">
     <form action="submit.php" method="POST">
-        <h3>Send us a message</h3>
-    <fieldset>
-        <legend>Personal Information</legend>
-        <label for="firstname">First name</label>
-        <input type="text" name="firstname" id="firstname" class="form__input"/> <br/>
-        <label for="lastname">Last name</label>
-        <input type="text" name="lastname" id="lastname" class="form__input"/> <br/>
-        <label for="e-mail">E-mail</e-mail></label>
-        <input type="text" name="e-mail" id="e-mail" class="form__input"/> <br/>
-    </fieldset>
-        <textarea id="message" name="message" rows="5" cols="30"></textarea><br/>
-        <input type="submit" value="Send" <a href="message.html">
+        <h2>Send us a message</h2>
+    <div>
+        <label for="firstname"></label>
+        <input type="text" name="firstname" id="firstname" placeholder="First Name"/>
+        <label for="lastname"></label>
+        <input type="text" name="lastname" id="lastname" placeholder="Last Name"/>
+        <label for="e-mail"></e-mail></label>
+        <input type="text" name="e-mail" id="e-mail" placeholder="E-mail"/>
+    </div>
+        <textarea class="textarea" id="message" name="message" id="message" placeholder="Your inquery" rows="10" cols="56"></textarea>
+        <input class="button-submit" type="submit" value="Send"/>
     </form>
 </main>
   <div class="aside-background">

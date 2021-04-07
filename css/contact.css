@@ -7,7 +7,6 @@ input[type="text"] {
     font-size: 15px;
     box-sizing: border-box;
     width: 200px;
-    border: 1px solid #000000;
     padding: 20px;
     margin: 20px 10px;
   }
