@@ -1,34 +1,26 @@
 /* Shop */ 
 
 /* Shop page styles */
-.grid {
-    background: rgb(255, 255, 255);
-    min-height: 50vh;
-    display: grid;
-    position: absolute;
-    grid-gap: 5em;
-    grid-template-rows: auto 1fr auto auto;
-    grid-template-columns: auto auto;
-  }
-
-  .element-a
-  
-
-/* grid-testing */ 
-
-.container {
-    display: grid | inline-grid;
-    background: 
-  }
 
 .grid-container {
-    grid-template-columns: 40px 50px auto 50px 40px;
-    grid-template-rows: 25% 100px auto;
+  max-width: 700px;
+  margin: 0 auto;
+    display: grid;
+    grid-gap: 15px;
+    column-gap: 15px;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 300px 300px 300px;
   }
 
-  .grid-logo {
-      grid-column-start: 1;
-      grid-column-end: three;
-      grid-row-start: row1-start;
-      grid-row-end: 2;
+button {
+  display: grid;
+    padding: 5px;
+    border:none;
+    background-color:#FFB90B;
+    color:#fff;
+    font-weight:600;
+    width: 60%;
+    margin: 9px;
+  
   }
+}

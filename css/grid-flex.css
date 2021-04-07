@@ -105,9 +105,17 @@ h1 {
 
 main {
   grid-area: main;
-  display: flex;
   background-color: white;
   padding: 20px 20px;
+}
+
+/*shop*/
+
+main img {
+display: flex;
+flex-flow: row;
+padding: 30px;
+margin-top: 0;
 }
 
 .form {
