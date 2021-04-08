@@ -1,0 +1,91 @@
+
+
+
+
+
+
+
+.right-container{
+        max-width: 350px;
+        margin: 0 auto;
+          display: grid;
+          grid-gap: 15px;
+          column-gap: 100px;
+          grid-template-columns: auto auto;
+          grid-template-rows: auto auto;
+          grid-template-areas: 
+          "re text"
+          "yel text2"
+          "shipping price"
+          "total price2"
+          "button button"
+        }
+
+.red{
+    grid-area: re;
+    display: flex;
+    background-color:#EBEBEB;
+    padding: 5px;
+}
+.yel{
+    grid-area: yel;
+    display: flex;
+    background-color:#EBEBEB;
+    padding: 5px;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    grid-area: text;
+}
+
+.text2{
+    display: flex;
+    grid-area: text2;
+    align-items: center;
+}
+
+.shipping{
+    display: flex;
+    justify-content:space-between;  /*avstand mellom subtotal og pris*/
+    grid-area: shipping;
+}
+
+.total{
+    display: flex;
+    grid-area: total;
+    align-items: center;
+}
+
+.price{
+    display: flex;
+    grid-area: price;
+    font-weight: lighter;
+}
+
+.price2{
+    display: flex;
+    grid-area: price2;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+
+.button {
+    grid-area: button;
+    padding: 10px;
+    border: none;
+    background-color: #ffb90b;
+    color: #fff;
+    font-weight: 700;
+    width: 100%;
+    font-size: 15px;
+    cursor:pointer;
+  }
+
+  p {
+      color: #81807d;
+      font-size: 15px;
+      font-family: Arial, Helvetica, sans-serif;
+  }

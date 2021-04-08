@@ -124,36 +124,6 @@ h1 {
 }
 
 
-/*contact*/
-.form {
-  grid-area: main;
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 20px;
-  margin: 10px;
-}
-
-input[type="text"] {
-  padding: 10px;
-  margin: 10px 0;
-  width: 50%;
-}
-
-.textarea {
-  padding: 8px;
-  margin: 20px 0; /*ikke kicket inn*/
-}
-.button-submit {
-  display: grid;
-  padding: 10px;
-  border: none;
-  background-color: #ffb90b;
-  color: #fff;
-  font-weight: 600;
-  width: 150px;
-}
-
 .aside-background {
   grid-area: aside;
   overflow: hidden;
