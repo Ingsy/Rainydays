@@ -1,10 +1,9 @@
 /* About page styles */
-.work {
-    background-color: #fff;
+.text {
     width: 300px;
     margin: 0 auto;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: normal;
     color: #696969;
   }

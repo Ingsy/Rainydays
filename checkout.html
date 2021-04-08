@@ -1,49 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="myscript.js"></script>
-</head>
-<body>
-    <div><img src="Img/RainyDays_Logo.png" alt="logo of my website.com" class="logo"/></div>
-    <h1> Pushing your comfort zone</h1> 
+    <link rel="stylesheet" href="./css/grid-flex.css" />
+    <link rel="stylesheet" href="./css/checkout.css" />
+    <script src="https://kit.fontawesome.com/b0782a38e3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="grid-container">
 
-    <h2>Checkout</h2>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="checkout.html">Checkout</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
+        <div class="nav-logo">
+            <img src="Img/RainyDays_Logo.png" alt="logo of my website.com" />
 
-    <form action="submit.php" method="POST">
-        <label for="First name">First name</label>
-        <input type="text" name="firstname" id="First name"/>
-        <label for="Last name">Last name</label>
-        <input type="text" name="lastname"/>
-        <label for="adress">adress</label>
-        <input type="text" name="adress"/>
-        <label for="postcode">postcode</label>
-        <input type="number" name="postcode"/>
-       <label for="Country">Select Country:</label>
-        <select  id="Countries" name="Countries">
-            <option value="Norway">Norway</option>
-            <option value="England">England</option>
-            <option value="Danmark">Denmark</option>
-            <option value="other">other</option>
-        </select>
-        <label for="email">e-mail</label>
-        <input type="text" name="e-mail" id="E-mail">
-    <input type="checkbox" id="email-updates">
-    <label for="email-updates">Sing up for newsletter</label> <br/>
-        <input type="submit" value="Send"/>
-    </form>
-</body>
+            <p class="sub-header">pushing your comfort zone</p>
+          </div>
+     <div class="nav-background">
+            <img src="img/nav-menu.jpg" alt="mountain" />
+          </div>
+
+      <nav class="nav">
+        <button alt="go to home page"><a href="index.html">Home</a></button>
+        <button alt="go to shop page"><a href="shop.html">Shop</a></button>
+        <button alt="go to checkout page"><a href="checkout.html">Checkout</a></button>
+        <button alt="go to contact page"><a href="contact.html">Contact</a></button>
+        <button alt="go to about page"><a href="about.html">About</a></button>
+      </nav>
+      <h1>Checkout</h1>
+      <main>
+        <div class="grid-container-main">
+        <form class="form-container" action="submit.php" method="POST">
+          <li>
+            <h2>shipping adress</h2>
+          <label for="First name"></label>
+          <input type="text" name="firstname" id="First name" placeholder="First name"/>
+          <label for="Last name"></label>
+          <input type="text" name="lastname" id="Last name" placeholder="Last name"/>
+          <label for="adress"></label>
+          <input type="text" name="adress" id="adress" placeholder="Adress"/>
+          <label for="city"></label>
+          <input type="text" name="city" id="city" placeholder="city"/>
+          <label for="postcode"></label>
+          <input type="number" name="postcode" id="postcode" placeholder="postcode"/> </br>
+         <label for="Country">Select Country:</label>
+          <select  id="Countries" name="Countries"> /* er det mulig å få denne inni en input? */
+              <option value="Norway">Norway</option>
+              <option value="England">England</option>
+              <option value="Danmark">Denmark</option>
+              <option value="other">other</option>
+          </select>
+          <label for="email"></label>
+          <input type="text" name="e-mail" id="E-mail" placeholder="E-mail">
+          <label for="Phone"></label>
+          <input type="number" name="Phone" id="Phone" placeholder="Phone">
+        </li>
+      </form>
+<section class="right">
+  <div class="right-container">
+    <div>
+        <img class="yel" src="Img/windbreaker-jacket-yellow.png" alt="jacket Yellow"/>
+    </div>
+
+    <div>
+        <img class="red" src="Img/windbreaker-jacket-red.png" alt="jacket Red"/>
+    </div>
+
+    <p class="text">
+        Windbreaker Jacket </br>
+        Yellow / M </br>
+        €150.00
+    </p>
+
+    <p class="text2">
+        Raincoat </br>
+        Orange / M </br>
+        €100.00
+    </p>
+
+    <p class="shipping">
+        Subtotal </br>
+        Shipping
+    </p>
+    <p>
+        <strong>Total</strong> </br>
+        Including €20,00 in taxes
+    </p>
+    <p class="price">
+        €250 </br>
+        €50 </br>
+    </p>
+    <p class="price2"> €300 </p>
+    <button class="button"><a href="checkout-success.html">Buy Now</a></button>
+</div>
+</section>
+
+    </div>
+      </main>
+      <div class="aside-background">
+        <img src="img/rainydais_høyre.jpg" alt="girl laughing with rain pouring ower her" />
+      </div>
+        <div class="aside">
+            <a  href="shoppingchart.html" alt="shoppingchart"><i class="fas fa-shopping-cart"></i></a>
+            <a  href="index.html" alt="home page"><i class="fas fa-home"></i></a>
+            <a  href="search.html" alt="search"><i class="fas fa-search"></i></a>
+        </div>
+        <div class="aside-sosial">
+            <div class="container">
+              <a href="https://twitter.com/" alt="twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://facebook.com" alt="facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://instagram.com" alt="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+      </div>
+  </body>
 </html>
