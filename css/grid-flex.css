@@ -72,11 +72,11 @@ nav button {
   transition-property: background-color;
   transition-duration: 1s;
   transition: width 1s;
-  text-decoration: none; /*ikke kicket inn*/
-  color: #cf4e02; /*ikke kicket inn*/
+  text-decoration: none;
+  color: #cc4c00;
 }
 .nav button:hover {
-  background-color: #cf4e02;
+  background-color: #cc4c00;
   transition-property: background-color;
   transition-duration: 0, 5s;
 }
@@ -99,6 +99,16 @@ nav button {
   justify-content: center;
 }
 
+.back-button{
+  grid-area: title;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:left;
+  margin-right: 15%;
+  color: #696969;
+}
+
 .nav-menu {
   left: 0;
   width: 20%;
@@ -115,10 +125,33 @@ main {
   align-items: center;
 }
 
+/*image container*/ 
+
+main .image-container {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  padding: 0 10%;
+}
+
+main .medium {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .medium > img {
+  width: 32%;
+  height: 32%;
+}
+
+main .big > img {
+  width: 100%;
+}
 /*Page defaults*/
 a {
     text-decoration: none;
-    color: #cf4e02;
+    color: #cc4c00;
+    cursor: pointer;
 }
 
 h1, h2{
@@ -128,7 +161,7 @@ h1, h2{
   font-family: Helvetica, sans-serif;
   font-size: 30px;
   font-weight: lighter;
-  color: #cf4e02;
+  color: #cc4c00;
 }
 
 
@@ -137,6 +170,9 @@ h1, h2{
   overflow: hidden;
   width: auto;
   z-index: 1;
+  margin: 15px;
+  margin-top: 0%;
+  margin-bottom: 0%;
 }
 
 .aside {
@@ -152,7 +188,7 @@ h1, h2{
   font-size: 2rem;
 }
 .aside a {
-    color: #cf4e02;
+    color: #cc4c00;
     cursor: pointer; /* kicker ikke inn*/ 
 }
 
@@ -184,10 +220,11 @@ h1, h2{
 }
 
 .sub-header {
-  color: #cf4e02;
-  font-size: 20px;
+  color: #cc4c00;
+  font-size: 18px;
   font-weight: bolder;
 }
+
 /* flexbox
     justify-content — controls alignment of all items on the main axis.
     align-items — controls alignment of all items on the cross axis.
@@ -216,5 +253,9 @@ h1, h2{
 
 .w100{
   width:100%;
+}
+
+.orange{
+  color: #cc4c00;
 }
 

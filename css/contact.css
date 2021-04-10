@@ -2,7 +2,6 @@
 
   /*contact*/
 .form {
-  grid-area: main;
   display: flex;
   align-items: center;
 }
@@ -21,9 +20,10 @@ input[type="text"] {
 }
 
 .contact-us{
-  grid-area: main;
-  display: flex;
-  align-items: baseline;
+  display:flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
   color:#707070;
   font-family: Arial, Helvetica, sans-serif;
 }

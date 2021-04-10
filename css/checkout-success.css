@@ -3,42 +3,20 @@
     margin: 0 auto;
       display: grid;
       grid-gap: 15px;
-      column-gap: 15px;
-      grid-template-columns: auto;
-      grid-template-rows: auto auto;
-      grid-template-areas: 
-      "icon"
-      "successful"
-      "order"
+      
     }
 .icon{
-    grid-area: icon;
-    display: flex;
     font-size: 150px;
     color:#B6E609;
-    align-items: center;
-    justify-content: center;
 }
 
 .successful{
-    grid-area: successful;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color:#FFB90B; /*kicker ikke inn grunnet p-element er satt til annen farge i mal-css */
+    margin-top: 40px;
+    color:#FFB90B;
 }
 
 .order{
-    grid-area: order;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black; /*kicker ikke inn*/
-    size: 15px; /*kicker ikke inn*/
-}
-
-p{
-    color: chocolate;
+    color:#696969;
+    size: 15px;
+    margin-top: 15px;
 }
