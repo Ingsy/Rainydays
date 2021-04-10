@@ -60,6 +60,11 @@
   font-size: 1.2rem;
 }
 
+.description {
+  color: #696969;
+  font-size: 1rem;
+}
+
 .colors-area-text > div {
   margin-bottom: 2rem;
 }
@@ -81,6 +86,7 @@
   color: #fff;
   font-weight: 600;
   width: 285px;
+  margin: 50px;
 }
 
 .box {
@@ -106,4 +112,8 @@
 
 .grey-bg {
   background-color: #696969;
+}
+
+.desk{
+  margin-top: 12px;
 }

@@ -1,0 +1,36 @@
+
+
+
+.update {
+  border: none;
+  background-color: #696969;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.sub {
+  grid-area: sub;
+}
+
+.buy {
+  padding: 10px;
+  border: none;
+  background-color: #ffb90b;
+  color: #fff;
+  font-weight: 700;
+  width: 300px;
+  font-size: 15px;
+  cursor: pointer;
+  float: right;
+}
+
+.table {
+  width: 100%;
+}
+
+table td{
+    text-align: center;
+
+}

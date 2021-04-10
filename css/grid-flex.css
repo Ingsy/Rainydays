@@ -204,6 +204,17 @@ h1, h2{
 .cc-column {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* controls alignment of all items on the vertical axis. */
-  align-items: center; /* controls alignment of all items on the horizontal axis. */
+  justify-content: center; /* controls alignment of all items on the horizontal  axis. */
+  align-items: center; /* controls alignment of all items on the vertical axis. */
 }
+
+.sb-row {
+  display: flex;
+  justify-content:space-between; 
+  align-items:center;
+}
+
+.w100{
+  width:100%;
+}
+
