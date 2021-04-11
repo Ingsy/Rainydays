@@ -265,8 +265,55 @@ h1, h2{
       width: 50%;
     }
 
-    .nav, .nav-background, .aside-background, .aside, .aside-sosial{
+  h1, .nav-background, .aside-background, .aside, .aside-sosial{
       display: none;
+    }
+
+    .mq-container{
+display: grid;
+height: 100%;
+  grid-template-columns: 100%; /* colum -> horisontal (bortover) */
+  grid-template-rows: 30% 10% 60%; /* row -> vertical (nedover)*/
+  grid-template-areas:
+    "logo"
+    "nav"
+    "main";
+}
+
+.mq-logo{
+grid-area: logo;
+display: flex;
+}
+
+.mq-nav{
+  grid-area: nav;
+  display: fixed;
+  align-items: center;
+  position: sticky;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.mq-main{
+  grid-area: main;
+  display: flex;
+width: 300px;
+align-content: last baseline;
+justify-self: center;
+flex-direction: row;
+}
+
+    .button-mq{
+      display: fixed;
+    margin: 5px;
+   border:none;
+   font-size: 10px;
+background-color: antiquewhite;
+width: 15%;
+    }
+
+    .sub-header{
+      font-size: 10px;
     }
   }
 
