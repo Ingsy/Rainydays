@@ -1,4 +1,6 @@
-nav-mobile {
+.nav-mobile {
 margin-bottom: 10px;
 border: solid gray;
+display: flex;
+flex-direction: column;
 }

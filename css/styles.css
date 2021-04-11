@@ -149,12 +149,14 @@ main .big > img {
 }
 
 /* Mobile styles */
-@media only screen and (max-width: 799px) {
-  footer, main {
+@media only screen and (max-width: 768px) {
+  footer {
     display: none;
   }
+
+
   header .nav-menu {
-    width: 100%;
+    width: 80%;
     margin-top: 20px;
   }
   header .slogan{
