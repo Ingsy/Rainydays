@@ -38,3 +38,16 @@ input[type="text"] {
   width: 150px;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {  
+  .mq-main {
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  .contact-us, form{
+    width: 60%;
+    margin-bottom: 40px;
+  }
+
+}

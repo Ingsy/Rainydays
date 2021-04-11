@@ -1,111 +1,119 @@
-
-.right-container{
-        max-width: 350px;
-        margin: 0 auto;
-          display: grid;
-          grid-gap: 15px;
-          column-gap: 100px;
-          grid-template-columns: auto auto;
-          grid-template-rows: auto auto;
-          grid-template-areas: 
-          "re text"
-          "yel text2"
-          "shipping price"
-          "total price2"
-          "button button"
-        }
-
-.red{
-    grid-area: re;
-    display: flex;
-    background-color:#EBEBEB;
-    padding: 5px;
-}
-.yel{
-    grid-area: yel;
-    display: flex;
-    background-color:#EBEBEB;
-    padding: 5px;
+.right-container {
+  max-width: 350px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 15px;
+  column-gap: 100px;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "re text"
+    "yel text2"
+    "shipping price"
+    "total price2"
+    "button button";
 }
 
-.text{
-    display: flex;
-    align-items: center;
-    grid-area: text;
+.red {
+  grid-area: re;
+  display: flex;
+  background-color: #ebebeb;
+  padding: 5px;
+}
+.yel {
+  grid-area: yel;
+  display: flex;
+  background-color: #ebebeb;
+  padding: 5px;
 }
 
-.text2{
-    display: flex;
-    grid-area: text2;
-    align-items: center;
+.text {
+  display: flex;
+  align-items: center;
+  grid-area: text;
 }
 
-.shipping{
-    display: flex;
-    justify-content:space-between;  /*avstand mellom subtotal og pris*/
-    grid-area: shipping;
+.text2 {
+  display: flex;
+  grid-area: text2;
+  align-items: center;
 }
 
-.total{
-    display: flex;
-    grid-area: total;
-    align-items: center;
+.shipping {
+  display: flex;
+  justify-content: space-between; /*avstand mellom subtotal og pris*/
+  grid-area: shipping;
 }
 
-.price{
-    display: flex;
-    grid-area: price;
-    font-weight: lighter;
+.total {
+  display: flex;
+  grid-area: total;
+  align-items: center;
 }
 
-.price2{
-    display: flex;
-    grid-area: price2;
-    font-weight: lighter;
-    font-size: 20px;
+.price {
+  display: flex;
+  grid-area: price;
+  font-weight: lighter;
 }
 
-.button{
-    grid-area: button;
-    padding: 10px;
-    border: none;
-    background-color: #ffb90b;
-    color: #fff!important;                 /*kicker ikke inn*/
-    font-weight: 700;
-    width: 100%;
-    font-size: 15px;
+.price2 {
+  display: flex;
+  grid-area: price2;
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.button {
+  grid-area: button;
+  padding: 10px;
+  border: none;
+  background-color: #ffb90b;
+  color: #fff !important; /*kicker ikke inn*/
+  font-weight: 700;
+  width: 100%;
+  font-size: 15px;
+}
+
+p {
+  color: #777673;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container-main {
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 15px;
+  column-gap: 15px;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "form . . right";
+}
+
+.form-container {
+  grid-area: form;
+  display: flex;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  width: 350px;
+}
+
+.right {
+  grid-area: right;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-container-main {
+    grid-template-columns: 100%;
+    grid-template-areas: "form" "right";
+    justify-items: center;
   }
 
-  p {
-      color:#777673;
-      font-size: 15px;
-      font-family: Arial, Helvetica, sans-serif;
+  .form-container{
+    width: 50%;
   }
-
-  .grid-container-main{
-    margin: 0 auto;
-      display: grid;
-      grid-gap: 15px;
-      column-gap: 15px;
-      grid-template-columns: auto auto;
-      grid-template-rows: auto auto;
-      grid-template-areas: 
-      "form . . right"
-
-    }
-  
-  .form-container {
-      grid-area: form;
-        display: flex;
-      }
-      
-      input {
-        padding: 10px;
-        margin: 10px 0;
-        width: 350px;
-      }
-
-      .right{
-          grid-area: right;
-      }
-  
+}

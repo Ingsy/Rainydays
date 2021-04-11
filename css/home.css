@@ -1,0 +1,19 @@
+body {
+    /* fix mozilla */
+    background-image: url("../Img/Home_Page.jpg"),
+      -moz-linear-gradient(top, #d6e2eb 0%, #cad4e26c 100%);
+    /* default */
+    background-image: linear-gradient(180deg, #ffffff9a, #b2b5dd48),
+      url("../Img/Home_Page.jpg");
+    /* other settings*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -o-background-size: cover; /* standard */
+    -moz-background-size: cover; /* mozilla */
+    -webkit-background-size: cover; /* chrome */
+    margin: 0; /* reset browser margins */
+  }
+
+  .title{
+      background-color: transparent;
+  }

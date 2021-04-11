@@ -117,3 +117,16 @@
 .desk{
   margin-top: 12px;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .jacket-page-grid{
+    grid-template-columns: 100%;
+    grid-template-areas: "jacket" "colors";
+    justify-items: center;
+  }
+
+  .jacket-area{
+    width: 60%;
+  }
+}
