@@ -265,9 +265,10 @@ h1, h2{
       width: 50%;
     }
 
-  h1, .nav-background, .aside-background, .aside, .aside-sosial{
+  h1, h2, .nav-background, .aside-background, .aside, .aside-sosial{
       display: none;
     }
+
 
     .mq-container{
 display: grid;
@@ -296,11 +297,12 @@ display: flex;
 
 .mq-main{
   grid-area: main;
+  row-gap: 10%;
   display: flex;
 width: 300px;
 align-content: last baseline;
 justify-self: center;
-flex-direction: row;
+flex-direction: row;              /*trenger hjelp til å fikse mq-main*/
 }
 
     .button-mq{
@@ -317,7 +319,3 @@ width: 15%;
     }
   }
 
-
-  /*ønsker å legge både nav-meny venstre 
-  og aside meny høyre inn i en container 
-  så jeg kan sette den til noene i mobil media query */
