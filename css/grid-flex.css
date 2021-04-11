@@ -259,6 +259,18 @@ h1, h2{
   color: #cc4c00;
 }
 
-/* Mobile styles */
-@media only screen and (max-width: 768px) {
- 
+  
+  @media only screen and (max-width: 768px) {
+    main{
+      width: 50%;
+    }
+
+    .nav, .nav-background, .aside-background, .aside, .aside-sosial{
+      display: none;
+    }
+  }
+
+
+  /*ønsker å legge både nav-meny venstre 
+  og aside meny høyre inn i en container 
+  så jeg kan sette den til noene i mobil media query */
