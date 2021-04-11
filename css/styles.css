@@ -1,132 +1,131 @@
-/* styles.css */
-/*  Styles for desktop */
-header {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bolder;
-  color: #cf4e02; /* first color of choice. Changed on the buttons/ancor-tags for accessability reasons*/
-  margin: 30px;
-}
-
 body {
-  /* fix mozilla */
-  background-image: url("../Img/Home_Page.jpg"),
-    -moz-linear-gradient(top, #d6e2eb 0%, #cad4e26c 100%);
-  /* default */
-  background-image: linear-gradient(180deg, #ffffff9a, #b2b5dd48),
-    url("../Img/Home_Page.jpg");
-  /* other settings*/
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  -o-background-size: cover; /* standard */
-  -moz-background-size: cover; /* mozilla */
-  -webkit-background-size: cover; /* chrome */
-  margin: 0; /* reset browser margins */
+  font-family: Helvetica, Arial sans-serif;
 }
 
-a {
-  color: #9b3a00; /*Changed color for accessability reasons (WCAG)*/
-  text-decoration: none; /* takes away the line under a link/button*/
-}
-
-header p {
-  margin-block-start: 0px;
-  margin-block-end: 60px;
-  margin-inline-start: 40px;
-  margin-inline-end: 0px;
-}
-
-header .logo {
-  max-width: 300px;
-  padding: 20px;
-}
-
-header .nav-menu {
+.grid-container {
   position: absolute;
+  top: 0;
   left: 0;
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  bottom: 0;
+  right: 0;
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 20% 60% 20%; /* colum -> horisontal (bortover) */
+  grid-template-rows: 70px 1fr 70px; /* row -> vertical (nedover)*/
+  grid-template-areas:
+    "nav title aside"
+    "nav main aside"
+    "nav main aside";
 }
 
-header .nav-menu button { /* preferably use ancor-tags instead of button if its for linking to another page*/
+/*grid-template-rows: auto auto auto 1fr; Auto = vil kun ta opp den plassen elementet trenger 1fr=resen av plassen*/
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+  z-index: 2;
+  flex-direction: column;
+}
+.nav-background {
+  grid-area: nav;
+  overflow: hidden;
+  width: auto;
+  z-index: 1;
+}
+.nav-background img,
+.aside-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav-logo {
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+  flex-direction: column;
+}
+
+.nav-logo img {
+  margin-top: 20px;
+  width: 90%;
+}
+
+nav button {
   text-align: center;
   cursor: pointer;
   box-sizing: border-box;
-  width: 170px;
-  border: 1px solid #000000;
-  margin-bottom: 25px;
+  width: 150px;
+  margin: 20px;
   background-color: #fff;
-  padding: 10px; /* shortcut for padding 1. px is top and bottom 2. one is left and right*/
+  padding: 5px; /* shortcut for padding 1. px is top and bottom 2. one is left and right*/
   font-size: 20px;
   display: inline-block;
-  position: relative;
   transition-property: background-color;
   transition-duration: 1s;
-  transition: width 2s;
+  transition: width 1s;
+  text-decoration: none;
+  color: #cc4c00;
 }
-
-.nav-menu button:hover {
-  background-color:#cf4e02;
+.nav button:hover {
+  background-color: #cc4c00;
   transition-property: background-color;
-  transition-duration: 2s;
-  width: 200px;
-
+  transition-duration: 0, 5s;
 }
 
-.nav-menu button:hover a{
-  color:#fff !important;
+.nav button:hover a {
+  color: #fff !important;
 }
 
-footer .right-menu-container {
-  position: fixed;
-  right: 20px;
-  top: 0;
-  bottom: 0;
-  width: 20%;
-  max-width: 350px;
-  min-width: 187px;
-  background: rgb(120, 120, 120);
-}
-footer i {
-  padding: 5px;
-  margin: 10px;
-}
-
-footer .right-menu-background {
-  z-index: 1;
-  width: 100%;
-  max-width: 350px;
-}
-
-footer .menu-icons {
-  position: absolute;
-  top: 1em;
-  width: 100%;
-  text-decoration: none;
+.title {
+  grid-area: title;
   display: flex;
-  justify-content: space-evenly;
-  font-size: 2rem;
-}
-
-footer .social {
-  position: absolute;
-  bottom: 1em;
-  width: 100%;
-  text-decoration: none;
-  display: flex;
-  justify-content: space-evenly;
+  font-weight: lighter;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: #cc4c00;
+  background-color: white;
+  margin: 0%;
+  flex-direction: row;
   align-items: center;
-  background: #ffffff79;
-  min-height: 40px;
-  font-size: 2rem;
+  justify-content: center;
 }
 
-footer .social a {
-  color: #000;
+.back-button{
+  grid-area: title;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:left;
+  margin-right: 15%;
+  color: #696969;
 }
 
-/* Photos styles */
+.nav-menu {
+  left: 0;
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+main {
+  grid-area: main;
+  padding: 20px 20px;
+  display: flex;
+  align-items: center;
+}
+
+/*image container*/ 
+
 main .image-container {
   position: absolute;
   left: 20%;
@@ -147,41 +146,195 @@ main .medium > img {
 main .big > img {
   width: 100%;
 }
-
-/* Mobile styles */
-@media only screen and (max-width: 768px) {
-  footer {
-    display: none;
-  }
-
-
-  header .nav-menu {
-    width: 80%;
-    margin-top: 20px;
-  }
-  header .slogan{
-    font-size: 1.4rem;
-  }
-  header .logo{
-    width: 60%;
-  }
-  header {
-    text-align: center;
-  }
-  header p {
-    margin-inline-start: 0px;
-    margin-block-end: 0px;
-  }
-  header .nav-menu button {
-    margin-bottom: 10px;
-    font-size: 20px;
-    width: 150px;
-  }
+/*Page defaults*/
+a {
+    text-decoration: none;
+    color: #cc4c00;
+    cursor: pointer;
 }
 
-/* Desktop medium styles */
-@media only screen and (min-width: 800px) and (max-width: 1400px)  {
- p {
-   font-size: 25px;
- }
+h1, h2{
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: lighter;
+  color: #cc4c00;
 }
+
+
+.aside-background {
+  grid-area: aside;
+  overflow: hidden;
+  width: auto;
+  z-index: 1;
+  margin: 15px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.aside {
+  grid-area: aside;
+  display: flex;
+  align-items: flex-start;
+  margin: 15px;
+  justify-content: space-evenly;
+  overflow: hidden;
+  flex-wrap: wrap;
+  z-index: 1000;
+  flex-direction: row;
+  font-size: 2rem;
+  height: 20%;
+}
+
+
+.aside-sosial {
+  grid-area: aside;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+  z-index: 2;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 20px;
+  left: 14px;
+  right: 14px;
+}
+
+.aside-sosial .container { 
+    width: 100%;
+    background: #ffffff79;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+.aside-sosial .container i {
+    padding: 5px;
+    margin: 10px;
+}
+
+.aside-sosial a {
+  color: #000000;
+}
+
+.sub-header {
+  color: #cc4c00;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+/* flexbox
+    justify-content — controls alignment of all items on the main axis.
+    align-items — controls alignment of all items on the cross axis.
+    align-self — controls alignment of an individual flex item on the cross axis.
+    align-content — described in the spec as for “packing flex lines”; controls space between flex lines on the cross axis.
+*/
+
+
+/****************/
+/* HELP CLASSES */
+/****************/
+
+/* Align all child items center center vertically */
+.cc-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* controls alignment of all items on the horizontal  axis. */
+  align-items: center; /* controls alignment of all items on the vertical axis. */
+}
+
+.sb-row {
+  display: flex;
+  justify-content:space-between; 
+  align-items:center;
+}
+
+.w100{
+  width:100%;
+}
+
+.orange{
+  color: #cc4c00;
+}
+  
+  @media only screen and (max-width: 768px) {
+    main{
+      width: 50%;
+    }
+    body {
+      /* fix mozilla */
+      background-image: url("../Img/nav-menu.jpg"),
+        -moz-linear-gradient(top, #d6e2eb 0%, #cad4e26c 100%);
+      /* default */
+      background-image: linear-gradient(180deg, #ffffff67, #fcfcfc),
+        url("../Img/nav-menu.jpg");
+      /* other settings*/
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      -o-background-size: cover; /* standard */
+      -moz-background-size: cover; /* mozilla */
+      -webkit-background-size: cover; /* chrome */
+      margin: 0; /* reset browser margins */
+    }
+
+  h1, h2, .nav-background, .aside-background, .aside, .aside-sosial{
+      display: none;
+    }
+p{
+  color: #000000;
+}
+
+    .mq-container{
+display: grid;
+height: 100%;
+  grid-template-columns: 100%; /* colum -> horisontal (bortover) */
+  grid-template-rows: auto auto 1fr; /* row -> vertical (nedover)*/
+  grid-template-areas:
+    "logo"
+    "nav"
+    "main";
+}
+
+.mq-logo{
+grid-area: logo;
+display: flex;
+
+}
+.nav-logo img {
+  width: 50%;
+}
+
+.mq-nav, .nav{
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: visible;
+  flex-direction: row;
+}
+
+.mq-main{
+  grid-area: main;
+  width: 100%;
+  display: flex;
+justify-self: center;
+flex-direction: row;              /*trenger hjelp til å fikse mq-main*/
+}
+
+    .button-mq{
+    margin: 5px;
+   border:1px solid #696969;
+   font-size: 10px;
+background-color: rgb(255, 255, 255);
+width: 17%;
+    }
+
+    .sub-header{
+      font-size: 10px;
+    }
+  }
+

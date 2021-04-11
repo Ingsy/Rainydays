@@ -1,0 +1,187 @@
+/* styles.css */
+/*  Styles for desktop */
+header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: #cf4e02; /* first color of choice. Changed on the buttons/ancor-tags for accessability reasons*/
+  margin: 30px;
+}
+
+body {
+  /* fix mozilla */
+  background-image: url("../Img/Home_Page.jpg"),
+    -moz-linear-gradient(top, #d6e2eb 0%, #cad4e26c 100%);
+  /* default */
+  background-image: linear-gradient(180deg, #ffffff9a, #b2b5dd48),
+    url("../Img/Home_Page.jpg");
+  /* other settings*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -o-background-size: cover; /* standard */
+  -moz-background-size: cover; /* mozilla */
+  -webkit-background-size: cover; /* chrome */
+  margin: 0; /* reset browser margins */
+}
+
+a {
+  color: #9b3a00; /*Changed color for accessability reasons (WCAG)*/
+  text-decoration: none; /* takes away the line under a link/button*/
+}
+
+header p {
+  margin-block-start: 0px;
+  margin-block-end: 60px;
+  margin-inline-start: 40px;
+  margin-inline-end: 0px;
+}
+
+header .logo {
+  max-width: 300px;
+  padding: 20px;
+}
+
+header .nav-menu {
+  position: absolute;
+  left: 0;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .nav-menu button { /* preferably use ancor-tags instead of button if its for linking to another page*/
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 170px;
+  border: 1px solid #000000;
+  margin-bottom: 25px;
+  background-color: #fff;
+  padding: 10px; /* shortcut for padding 1. px is top and bottom 2. one is left and right*/
+  font-size: 20px;
+  display: inline-block;
+  position: relative;
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition: width 2s;
+}
+
+.nav-menu button:hover {
+  background-color:#cf4e02;
+  transition-property: background-color;
+  transition-duration: 2s;
+  width: 200px;
+
+}
+
+.nav-menu button:hover a{
+  color:#fff !important;
+}
+
+footer .right-menu-container {
+  position: fixed;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+  max-width: 350px;
+  min-width: 187px;
+  background: rgb(120, 120, 120);
+}
+footer i {
+  padding: 5px;
+  margin: 10px;
+}
+
+footer .right-menu-background {
+  z-index: 1;
+  width: 100%;
+  max-width: 350px;
+}
+
+footer .menu-icons {
+  position: absolute;
+  top: 1em;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem;
+}
+
+footer .social {
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #ffffff79;
+  min-height: 40px;
+  font-size: 2rem;
+}
+
+footer .social a {
+  color: #000;
+}
+
+/* Photos styles */
+main .image-container {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  padding: 0 10%;
+}
+
+main .medium {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .medium > img {
+  width: 32%;
+  height: 32%;
+}
+
+main .big > img {
+  width: 100%;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+  footer {
+    display: none;
+  }
+
+
+  header .nav-menu {
+    width: 80%;
+    margin-top: 20px;
+  }
+  header .slogan{
+    font-size: 1.4rem;
+  }
+  header .logo{
+    width: 60%;
+  }
+  header {
+    text-align: center;
+  }
+  header p {
+    margin-inline-start: 0px;
+    margin-block-end: 0px;
+  }
+  header .nav-menu button {
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 150px;
+  }
+}
+
+/* Desktop medium styles */
+@media only screen and (min-width: 800px) and (max-width: 1400px)  {
+ p {
+   font-size: 25px;
+ }
+}
