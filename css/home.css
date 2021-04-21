@@ -17,3 +17,20 @@ body {
   .title{
       background-color: transparent;
   }
+
+  .col-button{
+    z-index: 3;
+    background-color: #fff;
+    color: #cc4c00;
+    cursor: pointer;
+    font-size: 15px;
+    width: 150px;
+    padding: 7px;
+    margin: 10px;
+  }
+
+  .big-image{
+    background-image: url("../Img/Winter_collection.jpg");
+    z-index: 2;
+    width: 400px;
+  }
